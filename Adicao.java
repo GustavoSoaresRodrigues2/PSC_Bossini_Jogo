@@ -14,6 +14,7 @@ public class Adicao {
         
         System.out.print("Primeiro número: ");
         double n1 = sc.nextInt();
+        
         System.out.print("Segundo número: ");
         double n2 = sc.nextInt();
         double result = n1 + n2;
