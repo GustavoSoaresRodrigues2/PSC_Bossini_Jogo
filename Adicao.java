@@ -10,7 +10,7 @@ public class Adicao {
 
         // Entrada / System.in é em referência a entrada padrão (Teclado)
         Scanner sc = new Scanner(System.in);
-        
+             
         // Pegando valores
         System.out.print("Primeiro número: ");
         n1 = sc.nextDouble();
@@ -20,7 +20,7 @@ public class Adicao {
 
         // Processo
         result = n1 + n2;
-
+   
         // Saída
         System.out.print("A Soma é: " + result);
 
