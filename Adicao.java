@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Adicao {
     public static void main(String [] args) {
@@ -8,21 +8,27 @@ public class Adicao {
         double n2;
         double result;
 
-        // Entrada / System.in é em referência a entrada padrão (Teclado)
-        Scanner sc = new Scanner(System.in);
-             
         // Pegando valores
-        System.out.print("Primeiro número: ");
-        n1 = sc.nextDouble();
+        n1 = 
+            Double.parseDouble(
+                JOptionPane.showInputDialog(
+                        "Primeiro número: "
+                )
+            );
 
-        System.out.print("Segundo número: ");
-        n2 = sc.nextDouble();
+        n2 =
+            Double.parseDouble(
+                JOptionPane.showInputDialog(
+                    "Segundo número: "
+                )
+            );
 
-        // Processo
+        // Operação
         result = n1 + n2;
-   
-        // Saída
-        System.out.print("A Soma é: " + result);
 
+        // Exibir Resultado
+        JOptionPane.showMessageDialog(
+            null, "A Soma é: " + result
+        );
     }
 }
