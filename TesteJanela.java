@@ -13,9 +13,7 @@ public class TesteJanela {
         textAreal.setSize(640,480);
         textAreal.setVisible(true);
 
-        JScrollPane scrollPane = new JScrollPane(textAreal,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
-        JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-
+        JScrollPane scrollPane = new JScrollPane(textAreal);
         frame.add(scrollPane);
         frame.pack();
         frame.setVisible(true);
